@@ -1,0 +1,11 @@
+# Local tooling / sync folders
+.claude/
+.tmp.drivedownload/
+.tmp.driveupload/
+.vercel/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Original print-size logo (web versions live in assets/)
+UC LOGO.png
