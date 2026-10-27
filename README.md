@@ -23,3 +23,5 @@ Then open http://localhost:5500.
 ## Deploy
 
 Pushing to `main` deploys automatically on Vercel once the repository is connected.
+
+Live site: https://urbanchanakya-website.vercel.app
