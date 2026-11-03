@@ -1,17 +1,24 @@
 # Urban Chanakya website
 
-Website for [urbanchanakya.in](https://urbanchanakya.in): AI & future skills education, in collaboration with Google and Canva.
+Website for [urbanchanakya.in](https://urbanchanakya.in): AI and future skills education.
 
-Plain HTML, CSS and JavaScript. No build step.
+Live site: https://urbanchanakya-website.vercel.app
 
-| Page | File |
-| --- | --- |
-| Home | `index.html` |
-| Trainers | `trainers.html` |
-| Google AI Educator Series | `google.html` |
-| Canva for Education | `canva.html` |
+Plain HTML, CSS and JavaScript with no build step.
 
-Shared styles are in `styles.css`, scripts in `script.js`, and images in `assets/`.
+## Structure
+
+```text
+index.html        Home
+google.html       Google AI Educator Series
+canva.html        Canva for Education
+trainers.html     Trainers and team
+css/styles.css    Styles for every page
+js/script.js      Scripts for every page
+assets/logos/     Urban Chanakya, Google for Education and Canva logos
+assets/trainers/  Team photos
+vercel.json       Hosting settings
+```
 
 ## Run locally
 
@@ -23,6 +30,4 @@ Then open http://localhost:5500.
 
 ## Deploy
 
-Pushing to `main` deploys automatically on Vercel once the repository is connected.
-
-Live site: https://urbanchanakya-website.vercel.app
+Pushing to `main` deploys automatically on Vercel.
