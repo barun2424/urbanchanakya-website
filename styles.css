@@ -542,3 +542,10 @@ details p a { color: var(--orange-2); }
   .pd-partner img { width: 120px; height: 120px; }
 }
 .nav-links .btn, .nav-links a { white-space: nowrap; }
+
+/* Five trainers: 3 + 2, with the second row centred */
+@media (min-width: 1025px) {
+  .trainers { grid-template-columns: repeat(6, 1fr); }
+  .trainers .trainer { grid-column: span 2; }
+  .trainers .trainer:nth-child(4) { grid-column: 2 / span 2; }
+}
