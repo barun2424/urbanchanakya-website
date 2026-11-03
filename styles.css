@@ -555,3 +555,5 @@ details p a { color: var(--orange-2); }
 .partner-logo img[src*="google-for-education"] { height: auto; width: 100%; max-width: 370px; }
 .logo-chip img[src*="google-for-education"] { height: 20px; }
 .card-brand img[src*="google-for-education"] { height: 16px; }
+.ges-logo { flex-wrap: wrap; max-width: 100%; }
+.ges-logo img[src*="google-for-education"] { height: 22px; }
