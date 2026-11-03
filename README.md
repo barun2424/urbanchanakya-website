@@ -8,6 +8,7 @@ Plain HTML, CSS and JavaScript. No build step.
 | --- | --- |
 | Home | `index.html` |
 | Trainers | `trainers.html` |
+| Google AI Educator Series | `google.html` |
 | Canva for Education | `canva.html` |
 
 Shared styles are in `styles.css`, scripts in `script.js`, and images in `assets/`.
