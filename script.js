@@ -136,8 +136,8 @@ if (form) form.addEventListener('submit', e => {
   e.preventDefault();
   const d = new FormData(form);
   const body = `Name: ${d.get('name')}\nEmail: ${d.get('email')}\nPhone: ${d.get('phone')}\nI am a: ${d.get('type')}\n\n${d.get('message')}`;
-  window.location.href = `mailto:info@urbanchanakya.in?subject=${encodeURIComponent('Website enquiry from ' + d.get('name'))}&body=${encodeURIComponent(body)}`;
-  form.querySelector('.form-note').textContent = 'Opening your email app… If nothing happens, write to info@urbanchanakya.in.';
+  window.location.href = `mailto:hello@urbanchanakya.in?subject=${encodeURIComponent('Website enquiry from ' + d.get('name'))}&body=${encodeURIComponent(body)}`;
+  form.querySelector('.form-note').textContent = 'Opening your email app… If nothing happens, write to hello@urbanchanakya.in.';
 });
 
 // PARTS prompting framework tabs (trainers page)

@@ -515,3 +515,30 @@ details p a { color: var(--orange-2); }
   .watch-grid .video-card, .watch-grid .channel-card { grid-column: 1; grid-row: auto; position: relative; top: auto; }
   .video-pair { grid-template-columns: 1fr; }
 }
+
+/* PD Partner, set apart from the trainers */
+.pd-partner { display: grid; grid-template-columns: 180px 1fr; gap: 30px; align-items: center; margin-top: 40px; padding: 26px; border-radius: 24px; background: linear-gradient(120deg, rgba(59,130,246,.18), rgba(139,92,246,.1) 55%, rgba(255,255,255,.03)); border: 1px solid rgba(99,102,241,.4); }
+.pd-partner img { width: 180px; height: 180px; object-fit: cover; border-radius: 18px; }
+.pd-partner .eyebrow { color: #A5B4FC; margin-bottom: 8px; }
+.pd-partner .eyebrow::before { background: linear-gradient(100deg, #3B82F6, #8B5CF6); }
+.pd-partner h3 { font-size: 1.4rem; margin-bottom: 2px; }
+.pd-partner .role { color: var(--muted); font-size: .9rem; margin-bottom: 10px; }
+.pd-partner p:last-child { color: #D5DEE6; margin: 0; }
+
+/* Keep the longer menu on one line */
+@media (max-width: 1240px) and (min-width: 1041px) { .nav-links { gap: 18px; } .nav-links a:not(.btn) { font-size: .84rem; } }
+@media (max-width: 1040px) {
+  .nav-toggle { display: block; }
+  .nav-links { position: absolute; top: 80px; left: 16px; right: 16px; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 20px 20px; border-radius: 18px; background: rgba(15,28,40,.95); backdrop-filter: blur(16px); border: 1px solid var(--border); display: none; }
+  .nav-links.open { display: flex; }
+  .nav-links a:not(.btn) { padding: 14px 0; border-bottom: 1px solid var(--border); color: #fff; font-size: .9rem; }
+  .nav-links .btn { margin-top: 16px; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+@media (max-width: 560px) {
+  .pd-partner { grid-template-columns: 1fr; }
+  .pd-partner img { width: 120px; height: 120px; }
+}
+.nav-links .btn, .nav-links a { white-space: nowrap; }
