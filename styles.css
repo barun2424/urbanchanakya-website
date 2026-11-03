@@ -549,3 +549,9 @@ details p a { color: var(--orange-2); }
   .trainers .trainer { grid-column: span 2; }
   .trainers .trainer:nth-child(4) { grid-column: 2 / span 2; }
 }
+
+/* Google for Education logo is much wider than the others */
+.partner-logo { padding: 0 24px; }
+.partner-logo img[src*="google-for-education"] { height: auto; width: 100%; max-width: 370px; }
+.logo-chip img[src*="google-for-education"] { height: 20px; }
+.card-brand img[src*="google-for-education"] { height: 16px; }
