@@ -3,7 +3,44 @@
   "headers": [
     {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/google",
+      "destination": "/google-ai-educator-series",
+      "permanent": true
+    },
+    {
+      "source": "/google.html",
+      "destination": "/google-ai-educator-series",
+      "permanent": true
+    },
+    {
+      "source": "/canva",
+      "destination": "/canva-for-education",
+      "permanent": true
+    },
+    {
+      "source": "/canva.html",
+      "destination": "/canva-for-education",
+      "permanent": true
+    },
+    {
+      "source": "/trainers",
+      "destination": "/team",
+      "permanent": true
+    },
+    {
+      "source": "/trainers.html",
+      "destination": "/team",
+      "permanent": true
     }
   ]
 }

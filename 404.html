@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found | Urban Chanakya</title>
+    <meta name="theme-color" content="#0A131C" />
+    <!-- Paths start at the site root: this page is served for missing addresses at any depth -->
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/logos/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/assets/logos/favicon-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css?v=8" />
+  </head>
+<body class="nf-page">
+
+<nav class="nav full" id="nav">
+  <a href="/" aria-label="Urban Chanakya home"><img src="/assets/logos/urban-chanakya-logo-on-dark.png" alt="Urban Chanakya Education"></a>
+  <button class="burger" id="burger" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <div class="links" id="links">
+    <a href="/">Home</a>
+    <a href="/#about">About</a>
+    <div class="drop"><a href="/#programs">Programs</a>
+      <div class="menu"><a href="/google-ai-educator-series.html">Google AI Educator Series</a><a href="/canva-for-education.html">Canva for Education</a></div>
+    </div>
+    <a href="/#collaboration">Our Collaboration</a>
+    <a href="/team.html">Team</a>
+    <a href="/#who">Who We Serve</a>
+    <a class="core" href="https://urbanchanakya.com/" target="_blank" rel="noopener">Core Urban Chanakya</a>
+  </div>
+</nav>
+
+<main class="nf single">
+  <div class="chess"></div>
+  <div class="nf-tiles" id="tiles" aria-hidden="true"></div>
+  <div class="beam"></div>
+  <div class="hcopy">
+    <div class="nf-stage" aria-hidden="true">
+      <div class="nf-wires">
+        <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+          <path class="wire" pathLength="1000" d="M500 150 H340 V30 H70"/>
+          <path class="wire" pathLength="1000" d="M500 150 H300 V270 H120"/>
+          <path class="wire" pathLength="1000" d="M500 150 H660 V30 H930"/>
+          <path class="wire" pathLength="1000" d="M500 150 H700 V270 H880"/>
+          <path class="pulse" pathLength="1000" d="M500 150 H340 V30 H70"/>
+          <path class="pulse" pathLength="1000" style="animation-delay:-.9s" d="M500 150 H300 V270 H120"/>
+          <path class="pulse" pathLength="1000" style="animation-delay:-1.8s" d="M500 150 H660 V30 H930"/>
+          <path class="pulse" pathLength="1000" style="animation-delay:-2.7s" d="M500 150 H700 V270 H880"/>
+        </svg>
+        <span class="nf-end" style="left:7%;top:10%"></span>
+        <span class="nf-end" style="left:12%;top:90%;animation-delay:-.9s"></span>
+        <span class="nf-end" style="left:93%;top:10%;animation-delay:-1.8s"></span>
+        <span class="nf-end" style="left:88%;top:90%;animation-delay:-2.7s"></span>
+      </div>
+      <span class="nf-digit" data-depth="-1">4</span>
+      <span class="nf-zero"><span>0</span></span>
+      <span class="nf-digit nf-digit-2" data-depth="1">4</span>
+    </div>
+    <span class="eyebrow">Error 404 · Page not found</span>
+    <h1>This move isn't <span class="g">on the board.</span></h1>
+    <p class="lead">The page you're looking for has moved or doesn't exist. Let's get you back in play.</p>
+    <div class="ctas"><a href="/" class="btn btn-p">Back to Home →</a><a href="/#programs" class="btn btn-g">Explore Programs</a></div>
+  </div>
+</main>
+
+<script>
+// Menu on phones
+const burger = document.getElementById("burger"), links = document.getElementById("links");
+burger.addEventListener("click", () => burger.setAttribute("aria-expanded", links.classList.toggle("open")));
+
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  // Squares of the chessboard light up one at a time, each somewhere new
+  const tiles = document.getElementById("tiles"), SQUARE = 44;
+  const place = (t) => {
+    t.style.left = Math.floor((Math.random() * innerWidth) / SQUARE) * SQUARE + "px";
+    t.style.top = Math.floor((Math.random() * innerHeight) / SQUARE) * SQUARE + "px";
+  };
+  for (let i = 0; i < 14; i++) {
+    const t = document.createElement("i");
+    t.style.animationDelay = -Math.random() * 5 + "s";
+    place(t);
+    t.addEventListener("animationiteration", () => place(t));
+    tiles.append(t);
+  }
+  // The two fours lean away from the cursor
+  const digits = [...document.querySelectorAll(".nf-digit")];
+  addEventListener("pointermove", (e) => {
+    if (e.pointerType === "touch") return;
+    const x = e.clientX / innerWidth - 0.5, y = e.clientY / innerHeight - 0.5;
+    digits.forEach((d) => { d.style.transform = `translate(${x * 26 * d.dataset.depth}px,${y * 16 * d.dataset.depth}px)`; });
+  });
+}
+</script>
+</body>
+</html>

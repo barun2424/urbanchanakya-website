@@ -9,15 +9,17 @@ Plain HTML, CSS and JavaScript with no build step.
 ## Structure
 
 ```text
-index.html        Home
-google.html       Google AI Educator Series
-canva.html        Canva for Education
-trainers.html     Trainers and team
-css/styles.css    Styles for every page
-js/script.js      Scripts for every page
-assets/logos/     Urban Chanakya, Google for Education and Canva logos
-assets/trainers/  Team photos
-vercel.json       Hosting settings
+index.html                      Home
+google-ai-educator-series.html  Google AI Educator Series
+canva-for-education.html        Canva for Education
+team.html                       Team: management, trainers and associates
+404.html                        Page not found, served by Vercel for missing addresses
+css/styles.css                  Styles for every page
+js/script.js                    Scripts for every page
+js/india-outline.js             India boundary for the home page globe
+assets/logos/                   Urban Chanakya, Google for Education and Canva logos, favicons
+assets/team/                    Team photos
+vercel.json                     Hosting settings
 ```
 
 ## Run locally

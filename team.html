@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+// Logo intro plays on arrival at the site, not on a reload or a click between pages
+try {
+  const entry = performance.getEntriesByType("navigation")[0];
+  const reopened = entry && (entry.type === "reload" || entry.type === "back_forward");
+  const internal = document.referrer && new URL(document.referrer).origin === location.origin;
+  if (reopened || internal) document.documentElement.classList.add("no-intro");
+} catch (e) {}
+</script>
+    <title>Our Team | Urban Chanakya</title>
+    <meta
+      name="description"
+      content="Meet the Urban Chanakya management, faculty trainers and associates who deliver our AI and digital skills programs."
+    />
+    <meta name="theme-color" content="#0A131C" />
+    <link rel="canonical" href="https://urbanchanakya.in/team.html" />
+    <meta property="og:title" content="Our Team | Urban Chanakya" />
+    <meta
+      property="og:description"
+      content="The educators behind Urban Chanakya's AI programs and the Google AI Educator Series."
+    />
+    <meta property="og:url" content="https://urbanchanakya.in/team.html" />
+    <meta
+      property="og:image"
+      content="https://urbanchanakya.in/assets/logos/urban-chanakya-logo-on-light.png"
+    />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/logos/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/logos/favicon-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=8" />
+  </head>
+<body>
+<div class="intro" aria-hidden="true"><img src="assets/logos/urban-chanakya-logo-on-dark.png" alt=""></div>
+
+<nav class="nav full" id="nav">
+  <a href="index.html" aria-label="Urban Chanakya home"><img src="assets/logos/urban-chanakya-logo-on-dark.png" alt="Urban Chanakya Education"></a>
+  <button class="burger" id="burger" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <div class="links" id="links">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <div class="drop"><a href="index.html#programs">Programs</a>
+      <div class="menu"><a href="google-ai-educator-series.html">Google AI Educator Series</a><a href="canva-for-education.html">Canva for Education</a></div>
+    </div>
+    <a href="index.html#collaboration">Our Collaboration</a>
+    <a href="team.html" aria-current="page">Team</a>
+    <a href="index.html#who">Who We Serve</a>
+    <a class="core" href="https://urbanchanakya.com/" target="_blank" rel="noopener">Core Urban Chanakya</a>
+  </div>
+</nav>
+
+<div id="heroWrap" data-theme="dark"><div class="istage" id="top">
+<header id="hero" class="single">
+  <div class="chess"></div>
+  <div class="beam"></div>
+  <div class="hcopy">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Team</span></nav>
+    <span class="pill"><span class="live"></span> Our Team</span>
+    <h1>Meet the people who<br><span class="g">teach the future.</span></h1>
+    <p class="lead">Our faculty trainers bring AI into classrooms and institutions, helping educators teach and work with confidence. <a href="google-ai-educator-series.html" style="color:var(--orange-2);text-decoration:underline">See what they teach</a>.</p>
+  </div>
+</header>
+</div></div>
+
+<div class="lt" id="sheet" data-theme="light">
+  <section class="sec" id="team">
+    <div class="head mgmt-head"><h2>Management</h2></div>
+    <div class="mgmt stagger">
+      <aside class="pd glow" aria-label="CEO">
+        <img src="assets/team/rajesh-chauhan.webp" alt="Rajesh Chauhan" loading="lazy">
+        <div><h3>Rajesh Chauhan</h3><p class="role">CEO · Urban Chanakya</p></div>
+      </aside>
+      <aside class="pd glow" aria-label="Program Development Head">
+        <img src="assets/team/nilotpala-dutta.jpg" alt="Nilotpala Dutta" loading="lazy">
+        <div><h3>Nilotpala Dutta</h3><p class="role">Program Development Head · Urban Chanakya</p></div>
+      </aside>
+    </div>
+
+    <div class="head mgmt-head"><h2>Trainers</h2></div>
+    <div class="people stagger">
+      <article class="tcard tilt"><div class="photo"><img src="assets/team/nupur-choudhury.jpg" alt="Dr. Nupur Choudhury" loading="lazy"><span class="badge">Faculty Trainer</span></div><div class="t-body"><h3>Dr. Nupur Choudhury</h3><p class="role">Faculty Trainer · Urban Chanakya</p><ul class="chips"><li>Google AI Educator Series</li><li>Gemini</li><li>Canva</li></ul></div></article>
+      <article class="tcard tilt"><div class="photo"><img src="assets/team/deepa-kalita.jpg" alt="Deepa Kalita" loading="lazy"><span class="badge">Faculty Trainer</span></div><div class="t-body"><h3>Deepa Kalita</h3><p class="role">Faculty Trainer · Urban Chanakya</p><ul class="chips"><li>Google AI Educator Series</li><li>Gemini</li><li>Canva</li></ul></div></article>
+      <article class="tcard tilt"><div class="photo"><img src="assets/team/rupesh-mandal.jpg" alt="Dr. Rupesh Mandal" loading="lazy"><span class="badge">Faculty Trainer</span></div><div class="t-body"><h3>Dr. Rupesh Mandal</h3><p class="role">Faculty Trainer · Urban Chanakya</p><ul class="chips"><li>Google AI Educator Series</li><li>Gemini</li><li>Canva</li></ul></div></article>
+      <article class="tcard tilt"><div class="photo"><img src="assets/team/simant-borthakur.jpg" alt="Simant Borthakur" loading="lazy"><span class="badge">Faculty Trainer</span></div><div class="t-body"><h3>Simant Borthakur</h3><p class="role">Faculty Trainer · Urban Chanakya</p><ul class="chips"><li>Google AI Educator Series</li><li>Gemini</li><li>Canva</li></ul></div></article>
+      <article class="tcard tilt"><div class="photo"><img src="assets/team/vishal-chetri.jpg" alt="Vishal Chetri" loading="lazy"><span class="badge">Faculty Trainer</span></div><div class="t-body"><h3>Vishal Chetri</h3><p class="role">Faculty Trainer · Urban Chanakya</p><ul class="chips"><li>Google AI Educator Series</li><li>Gemini</li></ul></div></article>
+    </div>
+
+    <div class="assoc glow">
+      <div><h3>Our associates</h3><p>They keep every session running: venues and materials, design drafts, translation into local languages, and follow-up after training.</p></div>
+      <ul>
+        
+        <li><span aria-hidden="true">BB</span>Barun Bordoloi</li>
+        <li><span aria-hidden="true">AB</span>Arnab Sharma Baruah</li>
+        <li><span aria-hidden="true">AP</span>Ankit Prasad</li>
+        <li><span aria-hidden="true">BK</span>Borsha Rani Kalita</li>
+        <li><span aria-hidden="true">SB</span>Sangeet Prakash Baruah</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<section class="sec" data-theme="dark">
+  <div class="cta"><div><h2>Transform Learning with Our Expert Trainers.</h2><p>Our trainers visit your campus or run it live online.</p></div><a href="index.html#contact" class="btn btn-l">Request a Session →</a></div>
+</section>
+
+<footer data-theme="dark">
+  <div class="fgrid">
+    <div class="fbrand"><a href="index.html" aria-label="Urban Chanakya home"><img src="assets/logos/urban-chanakya-logo-on-dark.png" alt="Urban Chanakya Education"></a><a class="fyt" href="https://www.youtube.com/@UC_Education" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6z"/></svg>YouTube</a></div>
+    <div><h4>Explore</h4><a href="index.html#about">About</a><a href="index.html#programs">Programs</a><a href="index.html#collaboration">Our Collaboration</a><a href="team.html">Team</a><a href="index.html#who">Who We Serve</a><a href="index.html#faq">FAQ</a></div>
+    <div><h4>Programs</h4><a href="google-ai-educator-series.html">Google AI Educator Series</a><a href="canva-for-education.html">Canva for Education</a><a href="index.html#programs">AI Foundations</a><a href="index.html#programs">AI for Educators</a><a href="index.html#programs">Google Digital Skills</a></div>
+    <div class="fcontact"><h4>Contact</h4><a href="mailto:hello@urbanchanakya.in"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>hello@urbanchanakya.in</a><a href="tel:+917002308545"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+91 70023 08545</a><address><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>510, 5th Floor, Protech Centre, GS Rd, GMC Ward Number 44, Ganeshguri, Guwahati, Assam 781006</span></address></div>
+  </div>
+  <div class="fbot"><span>© 2026 Urban Chanakya™. All rights reserved.</span><span>Google, Gemini and Canva are trademarks of their respective owners.</span></div>
+</footer>
+
+<script src="js/script.js?v=7"></script>
+</body>
+</html>
